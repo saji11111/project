@@ -1,0 +1,120 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+
+<!-- ✅ React Root Div -->
+<div id="react-heading"></div>
+
+<!-- ✅ Existing Doctor Section -->
+<section class="our-doctors">
+  <div class="row-our">
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d1.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-1</h2>
+          <p class="title-our">MBBS, MD, DM</p>
+          <p>doctor1@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d2.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-2</h2>
+          <p class="title-our">MBBS, MD, DM</p>
+          <p>doctor2@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d1.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-3</h2>
+          <p class="title-our">MBBS, MD, DM</p>
+          <p>doctor3@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d2.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-4</h2>
+          <p class="title-our">MBBS, MD</p>
+          <p>doctor4@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d1.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-5</h2>
+          <p class="title-our">MBBS, MD, DM</p>
+          <p>doctor5@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-our">
+      <div class="card-our">
+        <center>
+          <img src="{% static 'images/d2.jpg' %}" alt="" height="200px" />
+        </center>
+        <div class="container-our text-center">
+          <h2>Doctor-6</h2>
+          <p class="title-our">MBBS, MD</p>
+          <p>doctor6@example.com</p>
+          <p><button class="button-our"><a href="/booking">Book Appointment</a></button></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ React + Babel Scripts -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- ✅ React Component Script -->
+<script type="text/babel">
+  function Heading() {
+    return (
+      <div className="text-center my-4">
+        <br /><br /><br />
+        <h1 className="text-secondary">👨‍⚕️ Welcome to Our Doctor Portal (Powered by React)</h1>
+        <p>Meet our expert medical team and book your appointment now!</p>
+      </div>
+    );
+  }
+
+  const root = ReactDOM.createRoot(document.getElementById('react-heading'));
+  root.render(<Heading />);
+</script>
+
+{% endblock %}
