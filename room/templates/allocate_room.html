@@ -1,0 +1,16 @@
+{% extends 'index.html' %} {% load static %} {% block body %}
+
+<div style="margin-top: 15%; text-align: center; margin-bottom: 15%">
+
+<h3>Allocate Room to Patient</h3></br>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Allocate</button>
+</form>
+
+</div>
+
+
+
+{% endblock %}
