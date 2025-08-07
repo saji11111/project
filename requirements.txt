@@ -163,9 +163,6 @@ seaborn>=0.13.2
 selenium>=3.141.0
 service-identity>=21.1.0
 six>=1.15.0
-sklearn>=0.0
-sklearn-preprocessing>=0.1.0
-sklearn2>=0.0.13
 sniffio>=1.3.1
 soupsieve>=2.2.1
 SQLAlchemy>=1.4.23
@@ -205,4 +202,5 @@ xlrd>=2.0.1
 xlutils>=2.0.0
 xlwt>=1.3.0
 zope.interface>=5.4.0
+
 
